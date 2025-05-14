@@ -15,10 +15,10 @@
 Saturn-Cyan is a localisation system that works by combining data from multiple ultrasonic rangers and an ESP32-CAM. It will consist of a camera node, ultrasonic node, visualisation node, and PC software. A linear array of ultrasonic sensors should be used for accurate distance data, actuated by a PMOD keypad. The camera should be used from a different angle, sending camera data to the PC software. The PC software can then identify ArUco markers the person holds, allowing data fusions with the sensors as well as new rotation data. The person should be able to visualise themselves on the M5Core2 as the system communicates reliably via MQTT.
 
 ### Project Block Diagram
-![BlockDiagram](https://github.com/user-attachments/assets/02638dd9-2506-4ca8-8717-7441a6837d8f)
+![BlockDiagram](assets/BlockDiagram.png)
 
 ## DIKW Pyramid Abstraction
-![DIKWPyramid](https://github.com/user-attachments/assets/17566704-1263-49e6-a0ac-d4afe0509001)
+![DIKWPyramid](assets/DIKWPyramid.png)
 
 ### System Integration
 #### Sensor Integration Details
@@ -47,7 +47,7 @@ Saturn-Cyan is a localisation system that works by combining data from multiple 
    - All nodes connect to broker over WiFi
    - Fallback to direct node-to-node communication if broker unavailable
 
-![SignalDiagram](https://github.com/user-attachments/assets/a645b6a9-b994-4e5c-b9b2-7de6ef26981a)
+![SignalDiagram](assets/SignalDiagram.png)
 
 
 ### Deliverables and Key Performance Indicators
