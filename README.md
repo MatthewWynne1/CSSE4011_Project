@@ -56,14 +56,12 @@ Saturn-Cyan is a localisation system that works by combining data from multiple 
 ### Deliverables and Key Performance Indicators
 
 1. **Tracking Accuracy KPI:**
-   - Position error < 15cm in areas with both camera and ultrasonic coverage
-   - Position error < 30cm in areas with only camera coverage
-   - Position error < 10cm in areas with only ultrasonic coverage
+   - Position error < 10cm for ultrasonic sensors
+   - Rotation error < 10 degrees for camera
    - Measured by comparing system estimate with ground truth measurements
 
 2. **System Reliability KPI:**
    - Continuous tracking without loss for ≥ 5 minutes
-   - Recovery from temporary occlusion within 1 second
    - Measured by tracking success rate during testing scenarios
 
 3. **Data Fusion Performance KPI:**
@@ -71,11 +69,11 @@ Saturn-Cyan is a localisation system that works by combining data from multiple 
    - Measured by comparing fused position to camera-only and ultrasonic-only estimates
 
 4. **Latency KPI:**
-   - End-to-end latency < 500ms from measurement to dashboard update
+   - Image receoved every 5 seconds
    - Measured using timestamps in system logs
 
 5. **Visualization Quality KPI:**
-   - Dashboard updates at ≥ 5 FPS
+   - Dashboard updates every 30seconds
    - All system metrics visible and updating in real-time
    - Measured by the render time per frame (ms)
 ### Project Management
