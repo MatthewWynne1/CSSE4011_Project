@@ -11,6 +11,9 @@
 
 ## Project Overview
 
+### updates
+1. The zephyr implementation of the ESP32-cam was scrapped due to a lack of zephyr support for it. It has been replaced with an m5 core 2 running zephyr, communicating over UART to the ESP32-cam which now runs freeRTOS allowing it to utilise the ESP-IDF. In order to re-integrate the complexity, a custom UART protocol was created and the touchscreen of the Core was used to alllow the setting of the camera parameters (saturation, contrast, quality and brightness). The Core utilised TFTP for the jpegs it receives.
+
 ### Project Description
 Saturn-Cyan is a localisation system that works by combining data from multiple ultrasonic rangers and an ESP32-CAM. It will consist of a camera node, ultrasonic node, visualisation node, and PC software. A linear array of ultrasonic sensors should be used for accurate distance data, actuated by a PMOD keypad. The camera should be used from a different angle, sending camera data to the PC software. The PC software can then identify ArUco markers the person holds, allowing data fusions with the sensors as well as new rotation data. The person should be able to visualise themselves on the M5Core2 as the system communicates reliably via MQTT.
 
